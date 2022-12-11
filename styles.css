@@ -21,6 +21,7 @@ body {
 	align-items: center;
 }
 
+
 h1 {
 	font-size: 50px;
 	margin-bottom: 40px;
@@ -37,11 +38,13 @@ a {
 	width: 100%;
 	background-color: rgb(37,37,37);
 	margin: 15px;
-	padding: 20px;
-	border-radius: 30px;
+	padding: 10px;
+	border-radius: 40px;
 	display: flex;
 	justify-content: space-between;
 }
+
+
 
 .tile:hover {
 	transition: cubic-bezier(.87, 1.41, .82, 1.41) 0.2s;
@@ -50,6 +53,20 @@ a {
 
 
 
+.tile-share-button {
+	margin: 8px;
+	width: 80px;
+	height: 80px;
+	border-radius: 20px;
+	background-color: rgb(52,52,52);
+}
+
+
+.share-button svg {
+	margin-left: 12px;
+	margin-top: 10px;
+	color: rgb(0,0,0);
+}
 
 
 .image-container {
@@ -60,10 +77,11 @@ a {
 }
 
 
+
 .image-container img {
 	height: 100%;
-
 }
+
 
 
 .icon {
