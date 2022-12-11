@@ -6,7 +6,7 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	width: 70vw;
+	width: 100vw;
 	font-family: Verdana, Tahoma, sans-serif;
 }
 
@@ -23,8 +23,12 @@ body {
 
 
 h1 {
-	font-size: 50px;
+	font-size: 70px;
 	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 50px;
 }
 
 
@@ -62,17 +66,11 @@ a {
 }
 
 
-.share-button svg {
-	margin-left: 12px;
-	margin-top: 10px;
-	color: rgb(0,0,0);
-}
-
 
 .image-container {
-	height: 256px;
-	width: 256px;
-	border-radius: 128px;
+	height: 320px;
+	width: 320px;
+	border-radius: 160px;
 	overflow: hidden;
 }
 
