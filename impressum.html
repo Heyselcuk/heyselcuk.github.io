@@ -4,95 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum - Selcuk Demir</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1a0b2e 0%, #0d0521 50%, #0c1a3a 100%);
-            margin: 0;
-            padding: 20px;
-            color: #ffffff;
-            line-height: 1.6;
+        /* Additional styles for impressum page */
+        .container {
+            text-align: left;
+            max-width: 800px;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
         .button-container {
             display: flex;
-            gap: 20px; /* Adds space between the buttons */
-            justify-content: center; /* Centers the buttons horizontally */
+            gap: 20px;
+            justify-content: center;
             margin-bottom: 40px;
-        }
-
-        .btn {
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            font-weight: bold;
-            font-size: 1.2em; /* Bigger font size */
-        }
-        
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(110, 69, 226, 0.4);
-        }
-
-        .neonlights-btn {
-            background: linear-gradient(45deg, #8a2be2 0%, #4169e1 100%);
-            box-shadow: 0 0 8px rgba(138, 43, 226, 0.6); /* Less glow */
-        }
-        
-        .stockimg-btn {
-            background: linear-gradient(45deg, #8a2be2 0%, #4169e1 100%);
-            box-shadow: 0 0 8px rgba(138, 43, 226, 0.6); /* Less glow */
-        }
-        
-        .stockimg-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(110, 69, 226, 0.4);
+            flex-wrap: wrap;
         }
 
         h1 {
-            color: #b8b8ff;
-            border-bottom: 2px solid #6e45e2;
-            padding-bottom: 10px;
+            text-align: center;
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--primary-neon);
+            padding-bottom: 15px;
             margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         h2 {
-            color: #b8b8ff;
-            margin-top: 25px;
-            font-size: 1.3em;
+            font-family: 'Orbitron', monospace;
+            color: var(--primary-neon);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         p, li {
-            margin-bottom: 15px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
         }
 
-        a {
-            color: #b8b8ff;
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        a:not(.link) {
+            color: var(--primary-neon);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
-        a:hover {
-            color: #ffffff;
-            text-decoration: underline;
+        a:not(.link):hover {
+            color: var(--secondary-neon);
+            text-shadow: 0 0 10px var(--primary-neon);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="button-container">
-            <a href="https://www.neonlights.ai" class="btn neonlights-btn">Neonlights Ai</a>
-            <a href="https://www.stockimg.ai" class="btn stockimg-btn">Stockimg Ai</a>
+            <a href="https://www.neonlights.ai" class="link neonlights-btn">Neonlights Ai</a>
+            <a href="https://www.stockimg.ai" class="link stockimg-btn">Stockimg Ai</a>
         </div>
         
         <h1>Impressum</h1>
@@ -104,7 +93,7 @@
         <p>Österreich</p>
 
         <h2>Kontakt</h2>
-        <p>Email: heyselcuklee@gmail.com</p>
+        <p>Email: support@neonlights.ai</p>
 
         <h2>Gewerbeinformationen</h2>
         <p>Gewerbeart: Freies Gewerbe</p>
@@ -134,7 +123,9 @@
 
         <p>Noch mehr Informationen hier: <a href="https://neonlights.ai/impressum">https://neonlights.ai/impressum</a>.</p>
 
-        <a href="index.html" class="btn neonlights-btn">Back to Main Page</a>
+        <div class="back-btn">
+            <a href="index.html" class="link neonlights-btn">← Back to Main Page</a>
+        </div>
     </div>
 </body>
 </html>
