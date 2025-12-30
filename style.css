@@ -365,6 +365,73 @@ body::before {
   font-size: 1.3rem;
 }
 
+/* ===== VIRAL PROOF SECTION ===== */
+.viral-proof {
+  margin-top: 50px;
+  padding: 40px 0;
+}
+
+.viral-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.3rem;
+  color: var(--text-white);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.viral-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.viral-scroll {
+  display: flex;
+  gap: 16px;
+  animation: scroll-left 15s linear infinite;
+  width: max-content;
+}
+
+.viral-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.viral-thumb {
+  width: 140px;
+  height: 188px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.viral-thumb:hover {
+  transform: scale(1.05);
+  border-color: var(--primary-neon);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+
+.viral-caption {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
 /* ===== PROBLEM SECTION ===== */
 .problem-section {
   padding: 80px 20px;
