@@ -1030,15 +1030,25 @@ body::before {
 
 /* Advertisement Link */
 .ad-link {
-  background: #ffffff;
-  color: #000000;
-  border: 2px solid #ffffff;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
   position: relative;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.ad-link::before {
+  display: none !important;
+}
+
+.ad-link::after {
+  display: none !important;
 }
 
 .ad-link:hover {
-  background: #f0f0f0;
-  color: #000000;
+  background: #f0f0f0 !important;
+  color: #000000 !important;
+  transform: translateY(-3px);
   box-shadow: 
     0 0 40px rgba(255, 255, 255, 0.5),
     0 15px 35px rgba(255, 255, 255, 0.3);
