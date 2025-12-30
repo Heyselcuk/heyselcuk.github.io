@@ -1187,4 +1187,14 @@ body::before {
   .transformation-box {
     padding: 24px;
   }
+
+  .ad-button {
+    min-width: 280px;
+    max-width: 100%;
+    padding: 16px 24px;
+  }
+
+  .ad-text {
+    font-size: 1.1rem;
+  }
 }
