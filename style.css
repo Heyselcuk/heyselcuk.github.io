@@ -1035,6 +1035,13 @@ body::before {
     rgba(138, 43, 226, 0.1));
 }
 
+.email {
+  background: linear-gradient(135deg,
+    rgba(234, 67, 53, 0.12),
+    rgba(0, 0, 0, 0.05),
+    rgba(234, 67, 53, 0.12));
+}
+
 /* Advertisement Link */
 .ad-link {
   background: #ffffff !important;
