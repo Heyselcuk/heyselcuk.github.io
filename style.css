@@ -1028,6 +1028,13 @@ body::before {
     rgba(0, 255, 255, 0.12));
 }
 
+.facebook {
+  background: linear-gradient(135deg, 
+    rgba(24, 119, 242, 0.12), 
+    rgba(10, 80, 200, 0.08), 
+    rgba(24, 119, 242, 0.12));
+}
+
 .legal {
   background: linear-gradient(135deg, 
     rgba(138, 43, 226, 0.1), 
