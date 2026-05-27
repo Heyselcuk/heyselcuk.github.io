@@ -1035,6 +1035,13 @@ body::before {
     rgba(24, 119, 242, 0.12));
 }
 
+.spotify {
+  background: linear-gradient(135deg,
+    rgba(30, 215, 96, 0.12),
+    rgba(0, 0, 0, 0.05),
+    rgba(30, 215, 96, 0.12));
+}
+
 .legal {
   background: linear-gradient(135deg, 
     rgba(138, 43, 226, 0.1), 
