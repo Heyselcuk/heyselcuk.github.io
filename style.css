@@ -296,16 +296,22 @@ body::before {
   margin-top: 0;
 }
 
-@media (max-width: 400px) {
+.video-link.bilibili-mobile-link {
+  display: none;
+}
+
+@media (max-width: 767px) {
   .bilibili-video-frame {
-    overflow: hidden;
+    display: none;
   }
 
-  .bilibili-video-frame iframe {
-    width: 200%;
-    height: 200%;
-    transform: scale(0.5);
-    transform-origin: top left;
+  .video-link.bilibili-mobile-link {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .video-link.bilibili-desktop-link {
+    display: none;
   }
 }
 
