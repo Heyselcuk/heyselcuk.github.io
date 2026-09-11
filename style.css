@@ -296,6 +296,10 @@ body::before {
   margin-top: 0;
 }
 
+.video-frame.bilibili-video-preview {
+  display: none;
+}
+
 .video-link.bilibili-mobile-link {
   display: none;
 }
@@ -303,6 +307,10 @@ body::before {
 @media (max-width: 767px) {
   .bilibili-video-frame {
     display: none;
+  }
+
+  .video-frame.bilibili-video-preview {
+    display: block;
   }
 
   .video-link.bilibili-mobile-link {
