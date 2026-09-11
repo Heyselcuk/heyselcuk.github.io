@@ -256,6 +256,13 @@ body::before {
     rgba(234, 67, 53, 0.12));
 }
 
+.bilibili {
+  background: linear-gradient(135deg,
+    rgba(0, 174, 236, 0.14),
+    rgba(251, 114, 153, 0.1),
+    rgba(0, 174, 236, 0.14));
+}
+
 .video-section {
   width: 100%;
   max-width: 640px;
@@ -283,6 +290,39 @@ body::before {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.bilibili-video-frame {
+  margin-top: 0;
+}
+
+@media (max-width: 400px) {
+  .bilibili-video-frame {
+    overflow: hidden;
+  }
+
+  .bilibili-video-frame iframe {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+}
+
+.bilibili-video-heading {
+  margin-top: 48px;
+}
+
+.bilibili-video-preview {
+  display: block;
+  overflow: hidden;
+}
+
+.bilibili-video-thumbnail {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video-link {
