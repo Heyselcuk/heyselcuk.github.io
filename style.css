@@ -228,6 +228,13 @@ body::before {
     rgba(30, 215, 96, 0.12));
 }
 
+.apple-music {
+  background: linear-gradient(135deg,
+    rgba(250, 45, 85, 0.12),
+    rgba(250, 45, 85, 0.05),
+    rgba(250, 45, 85, 0.12));
+}
+
 .facebook {
   background: linear-gradient(135deg,
     rgba(24, 119, 242, 0.12),
